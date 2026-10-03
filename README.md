@@ -20,7 +20,8 @@ Web estática del apartamento vacacional en San Cristóbal de La Laguna (Tenerif
 
 ## Pendiente antes de publicar
 
-- [ ] Fotos en `img/` (ver `img/README.md`)
+- [x] Fotos en `img/` (ver `img/README.md`)
+- [ ] Foto de la fachada y de la calle, que faltan
 - [ ] Enlazar la web desde la ficha de Google Business ("Añadir sitio web")
 - [ ] Decidir si se enlaza el anuncio de Booking directamente
 

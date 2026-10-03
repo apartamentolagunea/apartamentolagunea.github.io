@@ -1,14 +1,18 @@
 # Fotos
 
-Nombres de archivo que espera `index.html` (apartamento de 1 dormitorio, 60 m²) (JPG, 1600 px de ancho aprox., < 400 KB cada una):
+Fotos actuales (JPG, 1024 px de ancho, optimizadas). Para cambiar una, sustituye el archivo con el mismo nombre y vuelve a hacer commit.
 
-- hero.jpg          — foto principal (vertical, 4:5). Fachada, balcón o la calle desde la ventana
-- salon.jpg         — salón (horizontal)
-- cocina.jpg
-- dormitorio.jpg    — dormitorio con cama de matrimonio
-- sofa-cama.jpg     — salón con el sofá cama abierto o cerrado
-- entrada.jpg
-- bano.jpg
-- vistas.jpg        — vista desde la ventana o el balcón (horizontal)
+- hero.jpg          — salón con el sofá cama (foto principal)
+- salon.jpg         — salón con TV y escritorio
+- cocina.jpg        — cocina
+- dormitorio.jpg    — dormitorio
+- dormitorio-2.jpg  — dormitorio, otra vista
+- comedor.jpg       — mesa de comedor
+- escritorio.jpg    — escritorio junto a la ventana
+- bano.jpg          — baño con ducha
+- lavadora.jpg      — lavadora
+- entrada.jpg       — recibidor
+- desayuno.jpg      — microondas, tostadora y cafetera
+- detalle.jpg       — detalle de bienvenida
 
-Mientras falte una foto, la web muestra un panel liso en su lugar. No hace falta tocar el HTML.
+Faltan y vendrían bien: la fachada del edificio, la calle, y una vista desde la ventana.
