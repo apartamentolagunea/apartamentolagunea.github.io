@@ -9,13 +9,20 @@ Web estática del apartamento vacacional en San Cristóbal de La Laguna (Tenerif
 - Fotos: carpeta `img/`, ver `img/README.md`
 - Colores y tipografía: `css/style.css`, variables al principio
 
+## Datos del alojamiento
+
+- Dirección: Calle Dr. Antonio González 6, 38204 San Cristóbal de La Laguna
+- 60 m², 1 dormitorio (cama de matrimonio) + sofá cama, hasta 4 personas
+- Licencia de vivienda vacacional: VV-38-4-0099456
+- Teléfono/WhatsApp: +34 651 77 51 69
+- Entrada 15:00–23:30, salida hasta 11:00
+- Anuncio en Booking: Central Apartment in La Laguna (9,1 / 104 comentarios)
+
 ## Pendiente antes de publicar
 
-- [ ] Fotos en `img/`
-- [ ] Número de registro de vivienda vacacional (pie de página, clave `foot.reg`)
-- [ ] Confirmar lista de equipamiento (wifi, lavadora, etc.)
-- [ ] Ubicación exacta en el mapa (ahora apunta al centro de La Laguna)
-- [ ] Enlace a Airbnb/Booking si se quiere mostrar
+- [ ] Fotos en `img/` (ver `img/README.md`)
+- [ ] Enlazar la web desde la ficha de Google Business ("Añadir sitio web")
+- [ ] Decidir si se enlaza el anuncio de Booking directamente
 
 ## Publicar
 
