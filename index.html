@@ -15,6 +15,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "name": "Central Apartment in La Laguna",
+    "alternateName": "Apartamento Lagunea",
+    "url": "https://apartamentolagunea.github.io/",
+    "image": "https://apartamentolagunea.github.io/img/hero.jpg",
+    "telephone": "+34651775169",
+    "numberOfRooms": 1,
+    "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+    "floorSize": { "@type": "QuantitativeValue", "value": 60, "unitCode": "MTK" },
+    "petsAllowed": false,
+    "smokingAllowed": false,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Dr. Antonio González, 6",
+      "postalCode": "38204",
+      "addressLocality": "San Cristóbal de La Laguna",
+      "addressRegion": "Santa Cruz de Tenerife",
+      "addressCountry": "ES"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Wifi gratis", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parking privado gratuito", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cocina equipada", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Lavadora", "value": true }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps/search/?api=1&query=Central%20Apartment%20in%20La%20Laguna%2C%20Calle%20Dr.%20Antonio%20Gonz%C3%A1lez%206%2C%2038204%20La%20Laguna",
+      "https://www.booking.com/hotel/es/central-apartment-in-la-laguna-with-private-parking.html"
+    ]
+  }
+  </script>
+
 </head>
 <body>
 
@@ -130,7 +165,7 @@
       <div><dt data-i18n="d.garden">Jardín Botánico</dt><dd>27 km</dd></div>
     </dl>
   </div>
-  <p class="fine" data-i18n="lag.fine">Distancias calculadas con OpenStreetMap.</p>
+  <p class="fine"><a class="plain" href="https://www.google.com/maps/search/?api=1&amp;query=Central%20Apartment%20in%20La%20Laguna%2C%20Calle%20Dr.%20Antonio%20Gonz%C3%A1lez%206%2C%2038204%20La%20Laguna" target="_blank" rel="noopener" data-i18n="lag.maps">Ver la ficha en Google Maps</a> · <span data-i18n="lag.fine">Distancias calculadas con OpenStreetMap.</span></p>
 </section>
 
 <section class="section" id="notas">
@@ -166,7 +201,7 @@
       <a class="btn btn-primary" href="https://wa.me/34651775169?text=Hola%2C%20me%20interesa%20el%20Apartamento%20Lagunea." target="_blank" rel="noopener" data-i18n="c.whatsapp">Escribir por WhatsApp</a>
       <a class="btn btn-ghost" href="tel:+34651775169">+34 651 77 51 69</a>
     </div>
-    <p class="fine" data-i18n="c.fine">También puedes reservar en Booking, donde tenemos 9,1 sobre 10 con más de cien comentarios.</p>
+    <p class="fine"><span data-i18n="c.fine">También puedes reservar en Booking, donde tenemos 9,1 sobre 10 con más de cien comentarios.</span> <a class="plain" href="https://www.booking.com/hotel/es/central-apartment-in-la-laguna-with-private-parking.html" target="_blank" rel="noopener" data-i18n="c.booking">Ver el anuncio</a>.</p>
   </div>
 </section>
 
@@ -175,6 +210,7 @@
 <footer class="foot">
   <p>Apartamento Lagunea · Calle Dr. Antonio González 6, 38204 San Cristóbal de La Laguna, Tenerife</p>
   <p data-i18n="foot.reg">Vivienda vacacional registrada en el Gobierno de Canarias. Nº de licencia: VV-38-4-0099456.</p>
+  <p class="foot-links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Central%20Apartment%20in%20La%20Laguna%2C%20Calle%20Dr.%20Antonio%20Gonz%C3%A1lez%206%2C%2038204%20La%20Laguna" target="_blank" rel="noopener" data-i18n="foot.maps">Google Maps</a> · <a href="https://www.booking.com/hotel/es/central-apartment-in-la-laguna-with-private-parking.html" target="_blank" rel="noopener" data-i18n="foot.booking">Booking.com</a> · <a href="https://wa.me/34651775169" target="_blank" rel="noopener">WhatsApp</a></p>
 </footer>
 
 <script src="js/i18n.js" defer></script>

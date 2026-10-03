@@ -45,7 +45,11 @@ const T = {
     "gal.breakfast": "For breakfast",
     "gal.laundry": "Washing machine",
     "gal.welcome": "Welcome treats",
-    "gal.bed2": "Bedroom"
+    "gal.bed2": "Bedroom",
+    "lag.maps": "See the listing on Google Maps",
+    "c.booking": "See the listing",
+    "foot.maps": "Google Maps",
+    "foot.booking": "Booking.com"
   },
   fr: {
     "nav.apartment": "L'appartement", "nav.laguna": "La Laguna", "nav.notes": "Bon à savoir", "nav.contact": "Réserver",
@@ -90,7 +94,11 @@ const T = {
     "gal.breakfast": "Pour le petit-déjeuner",
     "gal.laundry": "Lave-linge",
     "gal.welcome": "Petite attention",
-    "gal.bed2": "Chambre"
+    "gal.bed2": "Chambre",
+    "lag.maps": "Voir la fiche sur Google Maps",
+    "c.booking": "Voir l'annonce",
+    "foot.maps": "Google Maps",
+    "foot.booking": "Booking.com"
   },
   de: {
     "nav.apartment": "Die Wohnung", "nav.laguna": "La Laguna", "nav.notes": "Gut zu wissen", "nav.contact": "Buchen",
@@ -135,7 +143,11 @@ const T = {
     "gal.breakfast": "Zum Frühstück",
     "gal.laundry": "Waschmaschine",
     "gal.welcome": "Willkommensgruß",
-    "gal.bed2": "Schlafzimmer"
+    "gal.bed2": "Schlafzimmer",
+    "lag.maps": "Den Eintrag auf Google Maps ansehen",
+    "c.booking": "Zum Inserat",
+    "foot.maps": "Google Maps",
+    "foot.booking": "Booking.com"
   }
 };
 
