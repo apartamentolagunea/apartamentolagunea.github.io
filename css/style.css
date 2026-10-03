@@ -1,0 +1,274 @@
+/* Apartamento Lagunea
+   Palette taken from La Laguna's streets: green wooden balconies,
+   ochre facades, whitewash, basalt. */
+
+:root {
+  --white: #fbfaf6;
+  --paper: #f1eee6;
+  --green: #2f5d50;
+  --green-deep: #1f4238;
+  --ochre: #d39b36;
+  --ochre-ink: #3a2a0c;
+  --basalt: #2a2724;
+  --stone: #6d675f;
+  --line: #d9d4ca;
+
+  --display: "Fraunces", Georgia, serif;
+  --text: "Albert Sans", system-ui, sans-serif;
+
+  --gutter: clamp(16px, 5vw, 72px);
+  --measure: 62ch;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--basalt);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--ochre); outline-offset: 3px; }
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Header ---------- */
+.top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 18px var(--gutter);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--green);
+  font-variation-settings: "SOFT" 60;
+}
+.menu { display: flex; gap: 22px; margin-left: auto; }
+.menu a { text-decoration: none; font-size: 0.95rem; color: var(--stone); }
+.menu a:hover { color: var(--green); }
+.lang { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.lang button {
+  appearance: none; border: 0; background: transparent;
+  padding: 6px 11px; font: inherit; font-size: 0.8rem; color: var(--stone); cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--green); color: var(--white); }
+
+@media (max-width: 760px) {
+  .menu { display: none; }
+  .lang { margin-left: auto; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: end;
+  padding: clamp(28px, 5vw, 64px) var(--gutter) 0;
+}
+.hero-frame {
+  margin: 0;
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border: 10px solid var(--green);
+  background: var(--paper);
+  overflow: hidden;
+}
+.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
+.hero-frame figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 10px 14px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.85rem;
+}
+.hero-text { padding-bottom: clamp(24px, 4vw, 56px); }
+.kicker { margin: 0 0 14px; color: var(--stone); font-size: 0.95rem; }
+.hero h1 {
+  font-size: clamp(2.6rem, 6.5vw, 5.4rem);
+  line-height: 0.98;
+  font-variation-settings: "SOFT" 40, "opsz" 144;
+  font-weight: 300;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--green);
+  display: block;
+}
+.lede { max-width: var(--measure); font-size: 1.15rem; margin: 26px 0 32px; color: #3f3a34; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; align-items: start; }
+  .hero-frame { aspect-ratio: 5 / 4; order: 2; }
+  .hero-text { order: 1; padding-bottom: 8px; }
+}
+
+/* Missing-photo state: a plain tinted panel, no fake imagery */
+figure.missing img { display: none; }
+figure.missing { background: linear-gradient(160deg, #e7e1d3, #d4ccb9); }
+figure.missing::before {
+  content: "";
+  position: absolute; inset: 0;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1.5px solid transparent;
+  line-height: 1.2;
+}
+.btn-primary { background: var(--ochre); color: var(--ochre-ink); border-color: var(--ochre); }
+.btn-primary:hover { background: #c58d2b; border-color: #c58d2b; }
+.btn-ghost { border-color: var(--green); color: var(--green); background: transparent; }
+.btn-ghost:hover { background: var(--green); color: var(--white); }
+
+/* ---------- Facts strip ---------- */
+.facts {
+  list-style: none;
+  margin: clamp(32px, 5vw, 64px) var(--gutter) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--green);
+}
+.facts li {
+  padding: 22px 18px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.facts li + li { border-left: 1px solid var(--line); }
+.facts strong {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--green);
+}
+.facts span { color: var(--stone); font-size: 0.95rem; }
+@media (max-width: 700px) {
+  .facts { grid-template-columns: 1fr 1fr; }
+  .facts li:nth-child(3) { border-left: 0; }
+  .facts li:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* ---------- Sections ---------- */
+.section { padding: clamp(56px, 8vw, 110px) var(--gutter); }
+.section-head { max-width: 760px; margin-bottom: clamp(28px, 4vw, 48px); }
+.section-head h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; font-variation-settings: "SOFT" 40; }
+.section-head p { margin: 0; max-width: var(--measure); font-size: 1.1rem; color: #3f3a34; }
+
+.section-green { background: var(--green); color: var(--white); }
+.section-green .section-head p { color: #dfe8e3; }
+.section-green .fine { color: #bfd0c8; }
+
+/* ---------- Gallery ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.gallery figure {
+  margin: 0; position: relative; overflow: hidden;
+  aspect-ratio: 4 / 3; background: var(--paper);
+}
+.gallery .g-wide { grid-column: span 2; aspect-ratio: 8 / 3; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; }
+.gallery figcaption {
+  position: absolute; left: 12px; bottom: 12px;
+  background: var(--white); color: var(--basalt);
+  padding: 5px 10px; font-size: 0.82rem; border-radius: 3px;
+}
+@media (max-width: 700px) {
+  .gallery { grid-template-columns: 1fr 1fr; }
+  .gallery .g-wide { grid-column: span 2; aspect-ratio: 16 / 9; }
+}
+
+/* ---------- Amenities ---------- */
+.amenities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: clamp(40px, 5vw, 64px);
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.amenities h3 { font-size: 1.35rem; margin-bottom: 10px; color: var(--green); }
+.amenities ul { margin: 0; padding: 0; list-style: none; }
+.amenities li { padding: 7px 0; border-bottom: 1px solid var(--line); color: #3f3a34; }
+@media (max-width: 760px) { .amenities { grid-template-columns: 1fr; gap: 20px; } }
+
+/* ---------- La Laguna ---------- */
+.laguna-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+.map { aspect-ratio: 4 / 3; border: 6px solid var(--white); background: var(--green-deep); }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; }
+.distances { margin: 0; }
+.distances div {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+.distances dt { margin: 0; }
+.distances dd { margin: 0; font-family: var(--display); font-size: 1.2rem; white-space: nowrap; color: #f3e3bd; }
+.fine { font-size: 0.85rem; color: var(--stone); margin: 18px 0 0; }
+@media (max-width: 860px) { .laguna-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Notes ---------- */
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 48px;
+}
+.notes article { padding: 24px 0; border-top: 1px solid var(--line); }
+.notes h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.notes p { margin: 0; color: #3f3a34; max-width: 52ch; }
+@media (max-width: 760px) { .notes { grid-template-columns: 1fr; } }
+
+/* ---------- Contact ---------- */
+.contact { padding-top: 0; }
+.contact-card {
+  background: var(--paper);
+  border-left: 10px solid var(--green);
+  padding: clamp(28px, 4vw, 56px);
+}
+.contact-card h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 14px; }
+.contact-card p { max-width: var(--measure); margin: 0 0 24px; font-size: 1.1rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact-card .fine { margin-top: 20px; margin-bottom: 0; font-size: 0.9rem; }
+
+/* ---------- Footer ---------- */
+.foot {
+  padding: 28px var(--gutter) 40px;
+  border-top: 1px solid var(--line);
+  color: var(--stone);
+  font-size: 0.88rem;
+}
+.foot p { margin: 4px 0; }

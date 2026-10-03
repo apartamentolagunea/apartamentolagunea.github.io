@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apartamento Lagunea</title>
+  <meta name="description" content="Apartamento vacacional de tres dormitorios en el centro histórico de San Cristóbal de La Laguna, Tenerife. Garaje incluido, tercera planta con ascensor.">
+  <meta property="og:title" content="Apartamento Lagunea">
+  <meta property="og:description" content="Tres dormitorios en el centro histórico de La Laguna, Tenerife.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio">Lagunea</a>
+  <nav class="menu" aria-label="Secciones">
+    <a href="#apartamento" data-i18n="nav.apartment">El apartamento</a>
+    <a href="#laguna" data-i18n="nav.laguna">La Laguna</a>
+    <a href="#notas" data-i18n="nav.notes">Buenas prácticas</a>
+    <a href="#contacto" data-i18n="nav.contact">Reservar</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Idioma">
+    <button type="button" data-lang="es" aria-pressed="true">ES</button>
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="fr">FR</button>
+    <button type="button" data-lang="de">DE</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <figure class="hero-frame">
+    <img src="img/hero.jpg" alt="" onerror="this.closest('figure').classList.add('missing')">
+    <figcaption data-i18n="hero.caption">Centro histórico de San Cristóbal de La Laguna</figcaption>
+  </figure>
+  <div class="hero-text">
+    <p class="kicker" data-i18n="hero.kicker">Apartamento vacacional en Tenerife</p>
+    <h1>Apartamento <em>Lagunea</em></h1>
+    <p class="lede" data-i18n="hero.lede">Tres dormitorios en una ciudad declarada Patrimonio de la Humanidad. Nuestro piso familiar, a unos pasos de las calles peatonales y a diez minutos del aeropuerto del norte.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contacto" data-i18n="hero.book">Consultar disponibilidad</a>
+      <a class="btn btn-ghost" href="#apartamento" data-i18n="hero.see">Ver el apartamento</a>
+    </div>
+  </div>
+</section>
+
+<ul class="facts" aria-label="Datos clave">
+  <li><strong>3</strong><span data-i18n="facts.bedrooms">dormitorios</span></li>
+  <li><strong>6</strong><span data-i18n="facts.guests">huéspedes</span></li>
+  <li><strong>3º</strong><span data-i18n="facts.floor">planta con ascensor</span></li>
+  <li><strong>A8</strong><span data-i18n="facts.parking">plaza de garaje incluida</span></li>
+</ul>
+
+<section class="section" id="apartamento">
+  <div class="section-head">
+    <h2 data-i18n="apt.title">El apartamento</h2>
+    <p data-i18n="apt.intro">Es la casa de nuestra familia en La Laguna, no un piso montado para alquilar. Tiene lo que usamos nosotros cuando estamos allí: una cocina completa, un salón donde caben todos y tres habitaciones con armarios de verdad.</p>
+  </div>
+
+  <div class="gallery">
+    <figure class="g-wide"><img src="img/salon.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.living">Salón</figcaption></figure>
+    <figure><img src="img/cocina.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.kitchen">Cocina</figcaption></figure>
+    <figure><img src="img/dormitorio-1.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.bed1">Dormitorio principal</figcaption></figure>
+    <figure><img src="img/dormitorio-2.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.bed2">Segundo dormitorio</figcaption></figure>
+    <figure><img src="img/dormitorio-3.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.bed3">Tercer dormitorio</figcaption></figure>
+    <figure><img src="img/bano.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.bath">Baño</figcaption></figure>
+    <figure class="g-wide"><img src="img/vistas.jpg" alt="" onerror="this.closest('figure').classList.add('missing')"><figcaption data-i18n="gal.view">Vistas desde el apartamento</figcaption></figure>
+  </div>
+
+  <div class="amenities">
+    <div>
+      <h3 data-i18n="am.rooms.t">Espacios</h3>
+      <ul>
+        <li data-i18n="am.rooms.1">Tres dormitorios con armarios</li>
+        <li data-i18n="am.rooms.2">Salón comedor</li>
+        <li data-i18n="am.rooms.3">Cocina completa</li>
+        <li data-i18n="am.rooms.4">Baño completo</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="am.kit.t">Equipamiento</h3>
+      <ul>
+        <li data-i18n="am.kit.1">Wifi</li>
+        <li data-i18n="am.kit.2">Lavadora</li>
+        <li data-i18n="am.kit.3">Horno, vitrocerámica y nevera</li>
+        <li data-i18n="am.kit.4">Ropa de cama y toallas</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="am.bld.t">Edificio</h3>
+      <ul>
+        <li data-i18n="am.bld.1">Tercera planta con ascensor</li>
+        <li data-i18n="am.bld.2">Garaje en planta −2, plaza A8</li>
+        <li data-i18n="am.bld.3">Portal con código y caja de llaves</li>
+        <li data-i18n="am.bld.4">Llegada autónoma a cualquier hora</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-green" id="laguna">
+  <div class="section-head">
+    <h2 data-i18n="lag.title">La Laguna</h2>
+    <p data-i18n="lag.intro">Fue la primera capital de Tenerife y conserva el trazado del siglo XVI: calles rectas, casas de colores con balcones de madera y una vida de ciudad universitaria. Hace fresco por la noche incluso en verano, lo cual se agradece después de un día de playa.</p>
+  </div>
+
+  <div class="laguna-grid">
+    <div class="map">
+      <iframe title="Mapa de San Cristóbal de La Laguna" src="https://www.google.com/maps?q=San+Crist%C3%B3bal+de+La+Laguna,+Tenerife&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <dl class="distances">
+      <div><dt data-i18n="d.airport">Aeropuerto Tenerife Norte</dt><dd>10 min</dd></div>
+      <div><dt data-i18n="d.center">Calles peatonales del casco</dt><dd data-i18n="d.center.v">a pie</dd></div>
+      <div><dt data-i18n="d.tram">Tranvía a Santa Cruz</dt><dd>35 min</dd></div>
+      <div><dt data-i18n="d.anaga">Parque Rural de Anaga</dt><dd>20 min</dd></div>
+      <div><dt data-i18n="d.pools">Piscinas naturales de Bajamar</dt><dd>15 min</dd></div>
+      <div><dt data-i18n="d.beach">Playa de Las Teresitas</dt><dd>25 min</dd></div>
+      <div><dt data-i18n="d.teide">Teide</dt><dd>1 h 15</dd></div>
+    </dl>
+  </div>
+  <p class="fine" data-i18n="lag.fine">Tiempos aproximados en coche salvo indicación contraria.</p>
+</section>
+
+<section class="section" id="notas">
+  <div class="section-head">
+    <h2 data-i18n="notes.title">Buenas prácticas</h2>
+    <p data-i18n="notes.intro">Preferimos contarlo antes que después. Es un edificio tranquilo de vecinos de toda la vida, y queremos que siga siéndolo.</p>
+  </div>
+  <div class="notes">
+    <article>
+      <h3 data-i18n="n1.t">Silencio a partir de las 22:00</h3>
+      <p data-i18n="n1.p">Las paredes dejan pasar el sonido y la escalera amplifica las conversaciones. Música y voces altas, mejor fuera de casa por la noche.</p>
+    </article>
+    <article>
+      <h3 data-i18n="n2.t">Garaje estrecho</h3>
+      <p data-i18n="n2.p">La rampa al nivel −2 es justa para coches grandes. Con un compacto no hay problema. El mando y la llave del ascensor están en el perchero de la entrada.</p>
+    </article>
+    <article>
+      <h3 data-i18n="n3.t">Llegada y salida sin esperas</h3>
+      <p data-i18n="n3.p">Recibirás los códigos del portal y de la caja de llaves antes de llegar. Al salir, las llaves vuelven a la caja.</p>
+    </article>
+    <article>
+      <h3 data-i18n="n4.t">Sin fiestas ni eventos</h3>
+      <p data-i18n="n4.p">Máximo seis personas alojadas. Es un piso para descansar, no para celebrar.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="contact-card">
+    <h2 data-i18n="c.title">Reservar</h2>
+    <p data-i18n="c.intro">Escríbenos con las fechas y el número de personas y te confirmamos disponibilidad y precio en el día. Hablamos español, inglés, francés y alemán.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="https://wa.me/34640306530?text=Hola%2C%20me%20interesa%20el%20Apartamento%20Lagunea." target="_blank" rel="noopener" data-i18n="c.whatsapp">Escribir por WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+34640306530">+34 640 30 65 30</a>
+    </div>
+    <p class="fine" data-i18n="c.fine">También puedes reservar en la plataforma de tu confianza. Pídenos el enlace.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Apartamento Lagunea · San Cristóbal de La Laguna, Tenerife</p>
+  <p data-i18n="foot.reg">Vivienda vacacional registrada en el Gobierno de Canarias. Nº de registro: pendiente de incluir.</p>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+</body>
+</html>
